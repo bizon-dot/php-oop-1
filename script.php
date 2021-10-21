@@ -51,7 +51,7 @@ class Movie
 
     public function topFilm()
     {
-        return $this->star > 9;
+        return $this->stars > 9;
     }
 
 }
