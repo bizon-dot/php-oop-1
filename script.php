@@ -16,6 +16,39 @@ class Movie
         $this->duration = $_duration;
     }
 
+    public function get_title()
+    {
+
+        return $this->title;
+
+    }
+
+    public function get_director()
+    {
+
+        return $this->director;
+    }
+
+    public function get_year()
+    {
+
+        return $this->year;
+
+    }
+
+    public function get_stars()
+    {
+
+        return $this->stars;
+
+    }
+
+    public function get_duration()
+    {
+
+        return $this->duration;
+    }
+
     public function topFilm()
     {
         return $this->star > 9;
@@ -24,4 +57,26 @@ class Movie
 }
 
 $matrix = new Movie("Matrix", "Wachowski", 1999, 10, 136);
-var_dump($matrix);
+$ghostInTheShell = new Movie("Ghost in the shell", "Masamune Shirow", 1997, 10, 116);
+
+echo $matrix->get_title();
+echo "<br>";
+echo $matrix->get_director();
+echo "<br>";
+echo $matrix->get_year();
+echo "<br>";
+echo $matrix->get_stars();
+echo "<br>";
+echo $matrix->get_duration();
+echo "<br>";
+echo "<br>";
+echo $ghostInTheShell->get_title();
+echo "<br>";
+echo $ghostInTheShell->get_director();
+echo "<br>";
+echo $ghostInTheShell->get_year();
+echo "<br>";
+echo $ghostInTheShell->get_stars();
+echo "<br>";
+echo $ghostInTheShell->get_duration();
+// var_dump($ghostInTheShell);
